@@ -122,6 +122,8 @@
 <div>  
 <label for="dob">Date of Birth:</label>
 <input type="date" id="dob" name="dob"> 
+<label for="doj">Date of Joining:</label>
+<input type="date" id="doj" name="doj"> 
 </div> 
 <br> 
 <div>  
@@ -141,11 +143,16 @@ Phone :
 </div>
 <br> 
 <div>
+  <label>Designation :</label>
+  <input type = "text" name = "designation" placeholder="Designation" size="10"/ required>
+</div>
+    <br>
+<div>
   <label>
 Current Address :  
 </label>
 <br>
-<textarea cols="80" rows="4" placeholder="Current Address" value="address" required>  
+<textarea cols="80" rows="3" placeholder="Current Address" value="address" required>  
 </textarea>  
 </div>
 <br>
@@ -157,10 +164,8 @@ Current Address :
   <div>
     <label for="psw">Password</label>  
     <input type="password" placeholder="Enter Password" name="psw" required>  
-  
-    <label for="psw-repeat">Re-type Password</label>  
-    <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
   </div>
+    <br>
     <button type="submit" class="registerbtn btn btn-success">Register</button>   
     <button type="submit" class="btn btn-info">Create Card</button> 
 </form> 
