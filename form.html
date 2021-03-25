@@ -193,7 +193,7 @@ Current Address :
         
       </div>
       <div class="modal-footer">
-        <button type="button" onclick="printDiv('card');"class="btn btn-primary">Print</button>
+        <button type="button" onclick="printDiv('card);"class="btn btn-primary">Print</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal" >Close</button>
       </div>
     </div>
@@ -212,6 +212,19 @@ Current Address :
     });
     });
     </script>
+	  </script>
+	  <script>
+		  function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
+}
+	  </script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
 		<script>
 			/* JS comes here */
@@ -234,18 +247,6 @@ Current Address :
                     value: qrtext
                 });
             }
-		</script>
-	  <script>
-		  function printDiv(divName) {
-     var printContents = document.getElementById(divName).innerHTML;
-     var originalContents = document.body.innerHTML;
-
-     document.body.innerHTML = printContents;
-
-     window.print();
-
-     document.body.innerHTML = originalContents;
-}
-	  </script>
+		
   </body>
 </html>
