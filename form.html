@@ -182,7 +182,7 @@ Current Address :
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" id = "printable">
          <div><input id="qr-text" type="text" placeholder="Text to generate QR code"/></div>
         
         <div>
@@ -193,7 +193,7 @@ Current Address :
         
       </div>
       <div class="modal-footer">
-        <button type="button" onclick="window.print();"class="btn btn-primary">Print</button>
+        <button type="button" onclick="printDiv('printable');"class="btn btn-primary">Print</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal" >Close</button>
       </div>
     </div>
